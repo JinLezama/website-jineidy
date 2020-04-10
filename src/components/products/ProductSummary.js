@@ -1,10 +1,10 @@
 import React from 'react';
 
-const ProductSummary = () => {
+const ProductSummary = ({product}) => {
     return (
         <div className="card z-depth-0 product-summary">
             <div className="card-content grey-text text-darken-3">
-                <span className="card-title">Product Title</span>
+                <span className="card-title">{product.title}</span>
                 <p>Posted by Jin Lezama</p>
                 <p className="grey-text">8 April, 5:30pm</p>
                 <button className="upload">Upload</button>
