@@ -1,4 +1,6 @@
-import React, { Component } from 'react'
+import React, { Component } from 'react';
+import { connect } from 'react-redux';
+import { createProduct } from '../../store/actions/productActions';
 
 export class CreateProduct extends Component {
     state = {
@@ -14,7 +16,8 @@ export class CreateProduct extends Component {
 
     handleSubmit = (e) => {
         e.preventDefault();
-        console.log(this.state);
+        // console.log(this.state);
+        this.props.createProduct(this.state)
     }
     render() {
         return (
@@ -40,4 +43,10 @@ export class CreateProduct extends Component {
     }
 }
 
-export default CreateProduct
+const mapDispatchToProps = (dispatch) => {
+    return {
+        createProduct: (product) => dispatch(createProduct(product))
+    }
+}
+
+export default connect(null, mapDispatchToProps)(CreateProduct)

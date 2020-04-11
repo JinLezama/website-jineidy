@@ -1,12 +1,15 @@
 import React from 'react';
-import ProductSummary from './ProductSummary'
+import ProductSummary from './ProductSummary';
+import { Link } from 'react-router-dom'
 
 const ProductList = ({products}) => {
     return (
         <div className="project-list section">
            { products && products.map(product => {
                return (
-                   <ProductSummary product={product} key={product.id}/>
+                   <Link to={'/product/' + product.id} key={product.id}>
+                    <ProductSummary product={product} />
+                   </Link>
                )
            })}
         </div>
