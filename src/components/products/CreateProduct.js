@@ -19,6 +19,7 @@ export class CreateProduct extends Component {
         e.preventDefault();
         // console.log(this.state);
         this.props.createProduct(this.state)
+        this.props.history.push('/');
     }
     render() {
         const { auth } = this.props;
