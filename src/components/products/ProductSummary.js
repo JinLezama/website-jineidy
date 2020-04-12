@@ -1,4 +1,5 @@
 import React from 'react';
+import moment from 'moment';
 
 const ProductSummary = ({product}) => {
     return (
@@ -6,8 +7,7 @@ const ProductSummary = ({product}) => {
             <div className="card-content grey-text text-darken-3">
                 <span className="card-title">{product.title}</span>
                 <p>Posted by {product.authorFirstName} {product.authorLastName}</p>
-                <p className="grey-text">8 April, 5:30pm</p>
-                <button className="upload">Upload</button>
+                <p className="grey-text">{moment(product.createdAt.toDate()).calendar()}</p>
             </div>
         </div>
     )
