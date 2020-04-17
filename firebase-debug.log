@@ -1,0 +1,50 @@
+[debug] [2020-04-17T19:41:40.017Z] ----------------------------------------------------------------------
+[debug] [2020-04-17T19:41:40.019Z] Command:       /usr/local/Cellar/node/13.8.0/bin/node /usr/local/bin/firebase init
+[debug] [2020-04-17T19:41:40.020Z] CLI Version:   8.1.0
+[debug] [2020-04-17T19:41:40.020Z] Platform:      darwin
+[debug] [2020-04-17T19:41:40.020Z] Node Version:  v13.8.0
+[debug] [2020-04-17T19:41:40.021Z] Time:          Fri Apr 17 2020 13:41:40 GMT-0600 (Mountain Daylight Time)
+[debug] [2020-04-17T19:41:40.021Z] ----------------------------------------------------------------------
+[debug] [2020-04-17T19:41:40.021Z] 
+[debug] [2020-04-17T19:41:40.027Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2020-04-17T19:41:40.028Z] > authorizing via signed-in user
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  /Users/jinlezama/Desktop/development/bottega/capstone-website/website-jineidy
+
+Before we get started, keep in mind:
+
+  * You are initializing in an existing Firebase project directory
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[info] i  .firebaserc already has a default project, using jineidy-website.
+[debug] [2020-04-17T19:41:49.719Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/jineidy-website  
+ 
+[debug] [2020-04-17T19:41:50.031Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Fri, 17 Apr 2020 19:41:50 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"quic=\":443\"; ma=2592000; v=\"46,43\",h3-Q050=\":443\"; ma=2592000,h3-Q049=\":443\"; ma=2592000,h3-Q048=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,h3-T050=\":443\"; ma=2592000","accept-ranges":"none","transfer-encoding":"chunked"}
+[info] 
+=== Database Setup
+[info] 
+[info] Firebase Realtime Database Rules allow you to define how your data should be
+[info] structured and when your data can be read from and written to.
+[info] 
+[debug] [2020-04-17T19:41:53.797Z] Error: EISDIR: illegal operation on a directory, open '/Users/jinlezama/Desktop/development/bottega/capstone-website/website-jineidy/dist'
+    at Object.openSync (fs.js:457:3)
+    at Object.writeFileSync (fs.js:1298:35)
+    at Config.writeProjectFile (/usr/local/lib/node_modules/firebase-tools/lib/config.js:155:8)
+    at /usr/local/lib/node_modules/firebase-tools/lib/init/features/database.js:25:23
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+[error] 
+[error] Error: An unexpected error has occurred.
