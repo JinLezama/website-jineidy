@@ -6,9 +6,9 @@ body {
   margin: 0;
   padding: 0;
   font-family: sans-serif;
-  background: url(/img/fortnite.jpg) no-repeat;
+  background: url(/img/space.jpg) repeat-y;
   background-size: 100%;
-  background-position: bottom;
+  background-position: top;
   background-color: black;
   min-height: 100%;
 }
